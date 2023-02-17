@@ -1,0 +1,63 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.409756",
+   "Default View_TopLeft":"-944,-29",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 1170 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 1170 -y 40 -defaultsOSRD
+preplace port IIC -pg 1 -lvl 3 -x 1170 -y 60 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 3 -x 1170 -y 200 -defaultsOSRD
+preplace port ac_bclk -pg 1 -lvl 3 -x 1170 -y 80 -defaultsOSRD
+preplace port ac_mclk -pg 1 -lvl 3 -x 1170 -y 100 -defaultsOSRD
+preplace port ac_pbdat -pg 1 -lvl 3 -x 1170 -y 140 -defaultsOSRD
+preplace port ac_pblrc -pg 1 -lvl 3 -x 1170 -y 160 -defaultsOSRD
+preplace port ac_recdat -pg 1 -lvl 0 -x -100 -y 20 -defaultsOSRD
+preplace port ac_reclrc -pg 1 -lvl 3 -x 1170 -y 180 -defaultsOSRD
+preplace portBus ac_muten -pg 1 -lvl 3 -x 1170 -y 120 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 1 -x 200 -y 110 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 200 -y 290 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 1 -x 200 -y 430 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 1 -x 200 -y 640 -defaultsOSRD
+preplace inst d_axi_i2s_audio_0 -pg 1 -lvl 2 -x 760 -y 120 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 760 -y 480 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 760 -y 750 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 200 -y 870 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 760 -y 1050 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 760 -y 330 -defaultsOSRD
+preplace netloc ac_recdat_1 1 0 2 -80 980 400J
+preplace netloc axi_dma_0_mm2s_introut 1 1 1 450 150n
+preplace netloc axi_dma_0_s2mm_introut 1 1 1 420 170n
+preplace netloc axi_gpio_0_ip2intc_irpt 1 1 1 430 300n
+preplace netloc axi_i2s_adi_0_LRCLK_O 1 2 1 1120 120n
+preplace netloc axi_iic_0_iic2intc_irpt 1 1 1 380 430n
+preplace netloc d_axi_i2s_audio_0_BCLK_O 1 2 1 1070 80n
+preplace netloc d_axi_i2s_audio_0_MCLK_O 1 2 1 1100 100n
+preplace netloc d_axi_i2s_audio_0_SDATA_O 1 2 1 1110 140n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -50 1010 480 1170 1040
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 -30 1190 NJ 1190 1050
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 0 2 10 1000 500
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 2 -10 990 460
+preplace netloc xlconcat_0_dout 1 1 2 520 1180 1020
+preplace netloc xlconstant_0_dout 1 2 1 1140J 120n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 1 390 50n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 0 2 -40 -20 380
+preplace netloc axi_dma_0_M_AXI_S2MM 1 0 2 -30 -10 370
+preplace netloc axi_gpio_0_GPIO 1 1 2 470 930 1150J
+preplace netloc axi_iic_0_IIC 1 1 2 410 270 1090J
+preplace netloc axi_mem_intercon_M00_AXI 1 1 1 440 460n
+preplace netloc d_axi_i2s_audio_0_AXI_S2MM 1 0 3 -60 1160 NJ 1160 1060
+preplace netloc processing_system7_0_DDR 1 2 1 1080 20n
+preplace netloc processing_system7_0_FIXED_IO 1 2 1 1130 40n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 530 940 1030
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 3 0 970 490J 960 1020
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 3 -20 1140 NJ 1140 1010
+preplace netloc ps7_0_axi_periph_M02_AXI 1 1 2 510 950 990
+preplace netloc ps7_0_axi_periph_M03_AXI 1 0 3 -70 1150 NJ 1150 1000
+levelinfo -pg 1 -100 200 760 1170
+pagesize -pg 1 -db -bbox -sgen -220 -30 1310 1200
+"
+}
+
