@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.runs/synth_1'
+HD_PWD='E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

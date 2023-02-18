@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.xpr">
+<Project Version="7" Minor="49" Path="E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e24a3031af8e40f889435f4629c63f62"/>

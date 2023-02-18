@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.runs/synth_1/system_wrapper.tcl"
+  variable script "E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.runs/synth_1/system_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,45 +77,45 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.cache/wt [current_project]
-set_property parent.project_path C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.xpr [current_project]
+set_property webtalk.parent_dir E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.cache/wt [current_project]
+set_property parent.project_path E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.board} [current_project]
+set_property board_part_repo_paths {E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.board} [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.ipdefs/repo [current_project]
+set_property ip_repo_paths e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.ipdefs/repo [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.cache/ip [current_project]
+set_property ip_output_repo e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/imports/hdl/system_wrapper.v
-add_files C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/system.bd
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/sources_1/bd/system/system_ooc.xdc]
+read_verilog -library xil_defaultlib E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/imports/hdl/system_wrapper.v
+add_files E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/system.bd
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_axi_iic_0_0/system_axi_iic_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/sources_1/bd/system/system_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -126,8 +126,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Jason/Documents/Projects/digilent_audio_project_files/Zybo-Z7-10-DMA-2020.1/hw/hw.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
+read_xdc E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc
+set_property used_in_implementation false [get_files E:/GitHub/zybo-z7-10-Audio-Project/hw/hw.srcs/constrs_1/imports/constraints/Zybo-Z7-Master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
