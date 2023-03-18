@@ -1,0 +1,7 @@
+11:25:43 **** Clean-only build of configuration Debug for project audio ****
+make clean 
+rm -rf  ./src/adventures_with_ip.o ./src/audio.o ./src/ip_functions.o  ./src/adventures_with_ip.d ./src/audio.d ./src/ip_functions.d  audio.elf.size  audio.elf
+' '
+
+11:25:43 Build Finished (took 171ms)
+

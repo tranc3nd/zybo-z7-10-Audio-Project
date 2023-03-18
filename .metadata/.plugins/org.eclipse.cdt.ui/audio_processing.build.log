@@ -1,0 +1,40 @@
+18:55:29 **** Build of configuration Debug for project audio_processing ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/adventures_with_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/adventures_with_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jason/workspace/audio_wrapper/export/audio_wrapper/sw/audio_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/adventures_with_ip.d" -MT"src/adventures_with_ip.o" -o "src/adventures_with_ip.o" "../src/adventures_with_ip.c"
+In file included from ../src/adventures_with_ip.c:6:
+../src/adventures_with_ip.h:19:10: fatal error: xgpio.h: No such file or directory
+   19 | #include "xgpio.h"
+      |          ^~~~~~~~~
+compilation terminated.
+'Finished building: ../src/adventures_with_ip.c'
+' '
+'Building file: ../src/audio.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Jason/workspace/audio_wrapper/export/audio_wrapper/sw/audio_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/audio.d" -MT"src/audio.o" -o "src/audio.o" "../src/audio.c"
+../src/audio.c:6:10: fatal error: ../../audio.h: No such file or directory
+    6 | #include "../../audio.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+'Finished building: ../src/audio.c'
+' '
+'Building target: audio_processing.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jason/workspace/audio_wrapper/export/audio_wrapper/sw/audio_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "audio_processing.elf"  ./src/adventures_with_ip.o ./src/audio.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-xilinx-eabi-gcc.exe: error: ./src/adventures_with_ip.o: No such file or directory
+arm-xilinx-eabi-gcc.exe: error: ./src/audio.o: No such file or directory
+'Finished building target: audio_processing.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size audio_processing.elf  |tee "audio_processing.elf.size"
+arm-none-eabi-size: 'audio_processing.elf': No such file
+'Finished building: audio_processing.elf.size'
+' '
+
+18:55:30 Build Finished (took 1s.283ms)
+

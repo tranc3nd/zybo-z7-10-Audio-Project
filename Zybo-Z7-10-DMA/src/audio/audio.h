@@ -195,6 +195,8 @@ enum adauRegisterAdresses {
 // general reg
 extern u8 u8Verbose;
 
+//extern u16 volumeCounter = 23;
+
 /************************** Function Definitions *****************************/
 
 XStatus fnAudioWriteToReg(u8 u8RegAddr, u16 u8Data);

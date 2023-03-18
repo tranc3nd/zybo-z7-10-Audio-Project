@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="914" key="DIALOG_X_ORIGIN"/>
+		<item value="172" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="-1" key="dialogHeight"/>
 		<item value="-1" key="dialogWidth"/>
@@ -16,7 +20,11 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="E:\OneDrive\CSULB\CECS 460\The_Zynq_Book_Tutorial_Sources_Aug_15\sources\zybo\adventures_with_ip_integrator\drivers"/>
+			<item value="C:\Users\Jason\OneDrive\CSULB\CECS 460\The_Zynq_Book_Tutorial_Sources_Aug_15\sources\zybo\adventures_with_ip_integrator\drivers"/>
+			<item value="C:\Users\Jason\OneDrive\CSULB\CECS 460\The_Zynq_Book_Tutorial_Sources_Aug_15\sources\zybo\adventures_with_ip_integrator\software"/>
+			<item value="C:\Users\Jason\OneDrive\CSULB\CECS 460\The_Zynq_Book_Tutorial_Sources_Aug_15"/>
+			<item value="C:\Users\Jason\OneDrive\CSULB\CECS 460\Projects\Project_1"/>
+			<item value="C:\Users\Jason\OneDrive\CSULB\CECS 460"/>
 		</list>
 	</section>
 </section>
