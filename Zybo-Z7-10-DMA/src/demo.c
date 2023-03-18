@@ -237,10 +237,12 @@ int main(void)
 	xil_printf("Zybo Z7-10 DMA Audio Demo\r\n");
 	xil_printf("----------------------------------------------------------\r\n");
 	xil_printf("  Controls:\r\n");
+	xil_printf("  BTN0: Increases Volume by 1\r\n");
 	xil_printf("  BTN1: Record from MIC IN\r\n");
 	xil_printf("  BTN2: Play on HPH OUT\r\n");
 	xil_printf("  BTN3: Record from LINE IN\r\n");
 	xil_printf("----------------------------------------------------------\r\n");
+
 
     //main loop
 
@@ -318,10 +320,12 @@ int main(void)
 				case 'd':
 					if (!Demo.fAudioRecord && !Demo.fAudioPlayback)
 					{
+
 						xil_printf("\r\nStart Playback...\r\n");
 						fnSetHpOutput();
 						fnAudioPlay(sAxiDma,NR_AUDIO_SAMPLES);
 						Demo.fAudioPlayback = 1;
+
 					}
 					else
 					{
@@ -375,6 +379,22 @@ int main(void)
 						}
 					}
 					break;
+
+				case 'c':
+					if (!Demo.fAudioRecord && !Demo.fAudioPlayback)
+					{
+
+						xil_printf("\r\nStart Increasing Volume...");
+						//Initialize Audio I2S - this also increments the volume. If reaches a max of 33dB
+						//it will reset back to 0dB
+						Status = fnInitAudio();
+						if(Status != XST_SUCCESS) {
+							xil_printf("Audio initializing ERROR");
+							return XST_FAILURE;
+						}
+						xil_printf("\r\nDone. Record audio data again to apply volume changes.");
+					}
+
 				default:
 					break;
 			}

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="E:\OneDrive\CSULB\CECS 460\Projects\Zybo-Z7-10-DMA-2020.1-1-sw.ide.zip" key="sdx_import_archive_file_v2"/>
-	<item value="E:\GitHub\zybo-z7-10-Audio-Project\hw" key="scw_hwspec"/>
+	<item value="C:\Users\Jason\Documents\Projects\digilent_audio_project_files\Zybo-Z7-10-DMA-2020.1\hw" key="scw_hwspec_file_selection"/>
+	<item value="C:\Users\Jason\Documents\Projects\digilent_audio_project_files\Zybo-Z7-10-DMA-2020.1-1-sw.ide.zip" key="sdx_import_archive_file_v2"/>
+	<item value="C:\Users\Jason\OneDrive\CSULB\CECS 460\Projects\Project_1\audio_project_1" key="scw_hwspec"/>
 </section>

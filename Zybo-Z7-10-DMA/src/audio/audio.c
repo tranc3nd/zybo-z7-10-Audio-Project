@@ -64,6 +64,9 @@
 /************************** Variable Definitions *****************************/
 
 extern volatile sDemo_t Demo;
+u16 binaryVolume[] = {0b000100000, 0b000100010, 0b000100100, 0b000100110, 0b000101000, 0b000101010, 0b000101100, 0b000101101};
+int i = 0;
+u16 volumeCounter = 0;
 
 /******************************************************************************
  * Function to write one byte (8-bits) to one of the registers from the audio
@@ -222,6 +225,9 @@ XStatus fnAudioReadFromReg(u8 u8RegAddr, u8 *u8RxData) {
  * internally, and the sampling rates which will be set in the I2S_TRANSFER_CONTROL_REG
  * are ignored.
  *
+ * R0 and R1 - Bit 0 to 5 controls volume. Increments by a step of 1.5dB.
+ * The volume range is −34.5 dB to +33 dB
+ *
  * @param	none.
  *
  * @return	XST_SUCCESS if the configuration is successful
@@ -249,6 +255,17 @@ XStatus fnAudioStartupConfig ()
 	uConfigurationVariable.bit.u32bit1 = 0;
 	Xil_Out32(I2S_TRANSFER_CONTROL_REG, uConfigurationVariable.l);
 
+	volumeCounter = binaryVolume[i++];
+	xil_printf("\r\nCurrent Volume level: %d", i);
+	xil_printf("\r\n");
+	if(i > 8) {
+		i = 0;
+		volumeCounter = binaryVolume[i];
+		xil_printf("\r\nCurrent Volume level: %d", i);
+		xil_printf("\r\n");
+
+	}
+
 	//slave: I2S
 	Status = fnAudioWriteToReg(R15_SOFTWARE_RESET, 0b000000000);
 	Status = XST_SUCCESS;
@@ -270,7 +287,8 @@ XStatus fnAudioStartupConfig ()
 		}
 		return XST_FAILURE;
 	}
-	Status = fnAudioWriteToReg(R0_LEFT_ADC_VOL, 0b000010111);
+	//Status = fnAudioWriteToReg(R0_LEFT_ADC_VOL, 0b000010111);
+	Status = fnAudioWriteToReg(R0_LEFT_ADC_VOL, volumeCounter);
 	if (Status == XST_FAILURE)
 	{
 		if (Demo.u8Verbose)
@@ -279,7 +297,8 @@ XStatus fnAudioStartupConfig ()
 		}
 		return XST_FAILURE;
 	}
-	Status = fnAudioWriteToReg(R1_RIGHT_ADC_VOL, 0b000010111);
+	//Status = fnAudioWriteToReg(R1_RIGHT_ADC_VOL, 0b000010111);
+	Status = fnAudioWriteToReg(R1_RIGHT_ADC_VOL, volumeCounter);
 	if (Status == XST_FAILURE)
 	{
 		if (Demo.u8Verbose)
